@@ -49,6 +49,7 @@
 		6E13FB972597F03C0097F3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListVC.swift; sourceTree = "<group>"; };
+		6E629B792598CBC500005F79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		6E13FB672597F03B0097F3F0 = {
 			isa = PBXGroup;
 			children = (
+				6E629B792598CBC500005F79 /* README.md */,
 				6E13FB722597F03B0097F3F0 /* GithubAPIViewer */,
 				6E13FB892597F03C0097F3F0 /* GithubAPIViewerTests */,
 				6E13FB942597F03C0097F3F0 /* GithubAPIViewerUITests */,
