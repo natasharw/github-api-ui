@@ -18,6 +18,8 @@
 		6E629B7E2599065000005F79 /* GAVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629B7D2599065000005F79 /* GAVButton.swift */; };
 		6E629B83259909BE00005F79 /* GAVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629B82259909BE00005F79 /* GAVTextField.swift */; };
 		6E629B882599184400005F79 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629B872599184400005F79 /* FollowerListVC.swift */; };
+		6E629B8D25992CC100005F79 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E629B8C25992CC100005F79 /* .gitignore */; };
+		6E629B9225992D3E00005F79 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 6E629B9125992D3E00005F79 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		6E629B7D2599065000005F79 /* GAVButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVButton.swift; sourceTree = "<group>"; };
 		6E629B82259909BE00005F79 /* GAVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTextField.swift; sourceTree = "<group>"; };
 		6E629B872599184400005F79 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		6E629B8C25992CC100005F79 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6E629B9125992D3E00005F79 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		6E13FB672597F03B0097F3F0 = {
 			isa = PBXGroup;
 			children = (
+				6E629B9125992D3E00005F79 /* .gitattributes */,
+				6E629B8C25992CC100005F79 /* .gitignore */,
 				6E629B792598CBC500005F79 /* README.md */,
 				6E13FB722597F03B0097F3F0 /* GithubAPIViewer */,
 				6E13FB892597F03C0097F3F0 /* GithubAPIViewerTests */,
@@ -243,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E13FB802597F03C0097F3F0 /* LaunchScreen.storyboard in Resources */,
+				6E629B8D25992CC100005F79 /* .gitignore in Resources */,
 				6E13FB7D2597F03C0097F3F0 /* Assets.xcassets in Resources */,
+				6E629B9225992D3E00005F79 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
