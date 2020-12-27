@@ -15,6 +15,8 @@
 		6E13FB962597F03C0097F3F0 /* GHFollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FB952597F03C0097F3F0 /* GHFollowersUITests.swift */; };
 		6E13FBB02598B77F0097F3F0 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */; };
 		6E13FBB52598B7A60097F3F0 /* FavouriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */; };
+		6E629B7E2599065000005F79 /* GAVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629B7D2599065000005F79 /* GAVButton.swift */; };
+		6E629B83259909BE00005F79 /* GAVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E629B82259909BE00005F79 /* GAVTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListVC.swift; sourceTree = "<group>"; };
 		6E629B792598CBC500005F79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6E629B7D2599065000005F79 /* GAVButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVButton.swift; sourceTree = "<group>"; };
+		6E629B82259909BE00005F79 /* GAVTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				6E13FB812597F03C0097F3F0 /* Info.plist */,
 				6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */,
 				6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */,
+				6E629B7D2599065000005F79 /* GAVButton.swift */,
+				6E629B82259909BE00005F79 /* GAVTextField.swift */,
 			);
 			path = GithubAPIViewer;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E629B83259909BE00005F79 /* GAVTextField.swift in Sources */,
 				6E13FBB02598B77F0097F3F0 /* SearchVC.swift in Sources */,
 				6E13FB742597F03B0097F3F0 /* AppDelegate.swift in Sources */,
+				6E629B7E2599065000005F79 /* GAVButton.swift in Sources */,
 				6E13FBB52598B7A60097F3F0 /* FavouriteListVC.swift in Sources */,
 				6E13FB762597F03B0097F3F0 /* SceneDelegate.swift in Sources */,
 			);
