@@ -134,11 +134,12 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let activeArray = isSearching ? filteredFollowers : followers
-        let follower    = activeArray[indexPath.item]
+        let activeArray     = isSearching ? filteredFollowers : followers
+        let follower        = activeArray[indexPath.item]
 
-        let destVC      = UserInfoVC()
-        present(destVC, animated: true)
+        let destVC          = UserInfoVC()
+        let navController   = UINavigationController(rootViewController: destVC)
+        present(navController, animated: true)
     }
 
 
