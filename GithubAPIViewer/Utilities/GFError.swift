@@ -1,5 +1,5 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GithubAPIViewer
 //
 //  Created by Natasha Wilson on 28/12/2020.
@@ -13,3 +13,4 @@ enum GAVError: String, Error {
     case invalidResponse    = "Invalid response from the server. Please try again"
     case invalidData        = "The data received from the server was invalid. Please try again"
 }
+
