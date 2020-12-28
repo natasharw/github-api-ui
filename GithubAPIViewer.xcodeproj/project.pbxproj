@@ -121,20 +121,11 @@
 		6E13FB722597F03B0097F3F0 /* GithubAPIViewer */ = {
 			isa = PBXGroup;
 			children = (
-				6E13FB732597F03B0097F3F0 /* AppDelegate.swift */,
-				6E13FB752597F03B0097F3F0 /* SceneDelegate.swift */,
-				6E13FB7C2597F03C0097F3F0 /* Assets.xcassets */,
-				6E13FB7E2597F03C0097F3F0 /* LaunchScreen.storyboard */,
+				6EEBFCCD259A1FCF00DE86EA /* Support */,
+				6EEBFCCC259A1F7000DE86EA /* Extensions */,
+				6EEBFCCB259A1F3F00DE86EA /* Custom Views */,
+				6EEBFCCA259A1F0900DE86EA /* Screens */,
 				6E13FB812597F03C0097F3F0 /* Info.plist */,
-				6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */,
-				6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */,
-				6E629B7D2599065000005F79 /* GAVButton.swift */,
-				6E629B82259909BE00005F79 /* GAVTextField.swift */,
-				6E629B872599184400005F79 /* FollowerListVC.swift */,
-				6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */,
-				6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */,
-				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
-				6EEBFCC5259A1B7800DE86EA /* UIViewController+Ext.swift */,
 			);
 			path = GithubAPIViewer;
 			sourceTree = "<group>";
@@ -155,6 +146,47 @@
 				6E13FB972597F03C0097F3F0 /* Info.plist */,
 			);
 			path = GithubAPIViewerUITests;
+			sourceTree = "<group>";
+		};
+		6EEBFCCA259A1F0900DE86EA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6E629B872599184400005F79 /* FollowerListVC.swift */,
+				6E13FBB42598B7A60097F3F0 /* FavouriteListVC.swift */,
+				6E13FBAF2598B77F0097F3F0 /* SearchVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6EEBFCCB259A1F3F00DE86EA /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E629B82259909BE00005F79 /* GAVTextField.swift */,
+				6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */,
+				6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */,
+				6E629B7D2599065000005F79 /* GAVButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		6EEBFCCC259A1F7000DE86EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
+				6EEBFCC5259A1B7800DE86EA /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6EEBFCCD259A1FCF00DE86EA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6E13FB732597F03B0097F3F0 /* AppDelegate.swift */,
+				6E13FB752597F03B0097F3F0 /* SceneDelegate.swift */,
+				6E13FB7C2597F03C0097F3F0 /* Assets.xcassets */,
+				6E13FB7E2597F03C0097F3F0 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
