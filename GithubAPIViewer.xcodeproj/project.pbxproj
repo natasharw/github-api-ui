@@ -140,7 +140,7 @@
 				6EEBFCD1259A23E300DE86EA /* Model */,
 				6EEBFCCD259A1FCF00DE86EA /* Support */,
 				6EEBFCCC259A1F7000DE86EA /* Extensions */,
-				6EEBFCCB259A1F3F00DE86EA /* Custom Views */,
+				6EEBFCCB259A1F3F00DE86EA /* CustomViews */,
 				6EEBFCCA259A1F0900DE86EA /* Screens */,
 				6E13FB812597F03C0097F3F0 /* Info.plist */,
 			);
@@ -175,18 +175,18 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		6EEBFCCB259A1F3F00DE86EA /* Custom Views */ = {
+		6EEBFCCB259A1F3F00DE86EA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				6EFA223B259A88EA00E96685 /* Labels */,
+				6EFA223A259A88E400E96685 /* ViewControllers */,
+				6EFA2239259A88DE00E96685 /* ImageViews */,
+				6EFA2238259A88C700E96685 /* TextFields */,
+				6EFA2237259A88C200E96685 /* Buttons */,
+				6EFA2236259A88BC00E96685 /* Views */,
 				6EEBFCEE259A3C7000DE86EA /* Cells */,
-				6E629B82259909BE00005F79 /* GAVTextField.swift */,
-				6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */,
-				6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */,
-				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
-				6E629B7D2599065000005F79 /* GAVButton.swift */,
-				6EEBFCF7259A3D0D00DE86EA /* GAVAvatarImageView.swift */,
 			);
-			path = "Custom Views";
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		6EEBFCCC259A1F7000DE86EA /* Extensions */ = {
@@ -240,6 +240,54 @@
 				6EEBFCEF259A3C9100DE86EA /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6EFA2236259A88BC00E96685 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EFA2237259A88C200E96685 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				6E629B7D2599065000005F79 /* GAVButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		6EFA2238259A88C700E96685 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				6E629B82259909BE00005F79 /* GAVTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		6EFA2239259A88DE00E96685 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBFCF7259A3D0D00DE86EA /* GAVAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		6EFA223A259A88E400E96685 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6EFA223B259A88EA00E96685 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */,
+				6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
