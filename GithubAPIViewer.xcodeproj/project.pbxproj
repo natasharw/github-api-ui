@@ -31,6 +31,7 @@
 		6EEBFCF0259A3C9100DE86EA /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCEF259A3C9100DE86EA /* FollowerCell.swift */; };
 		6EEBFCF8259A3D0D00DE86EA /* GAVAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCF7259A3D0D00DE86EA /* GAVAvatarImageView.swift */; };
 		6EFA222F259A4F8800E96685 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA222E259A4F8800E96685 /* UIHelper.swift */; };
+		6EFA2240259A897F00E96685 /* GAVEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA223F259A897F00E96685 /* GAVEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		6EEBFCEF259A3C9100DE86EA /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		6EEBFCF7259A3D0D00DE86EA /* GAVAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAvatarImageView.swift; sourceTree = "<group>"; };
 		6EFA222E259A4F8800E96685 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		6EFA223F259A897F00E96685 /* GAVEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 		6EFA2236259A88BC00E96685 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6EFA223F259A897F00E96685 /* GAVEmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				6EEBFCF0259A3C9100DE86EA /* FollowerCell.swift in Sources */,
 				6EEBFCEA259A370F00DE86EA /* ErrorMessage.swift in Sources */,
 				6E629B882599184400005F79 /* FollowerListVC.swift in Sources */,
+				6EFA2240259A897F00E96685 /* GAVEmptyStateView.swift in Sources */,
 				6EEBFCD3259A23F700DE86EA /* Follower.swift in Sources */,
 				6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */,
 				6EEBFCE0259A280700DE86EA /* NetworkManager.swift in Sources */,
