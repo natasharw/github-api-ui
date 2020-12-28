@@ -13,6 +13,8 @@ class SearchVC: UIViewController {
     let usernameTextField   = GAVTextField()
     let callToActionButton  = GAVButton(backgroundColor: .systemGreen, title: "Get Followers")
     
+    var isUserNameEntered: Bool { return !usernameTextField.text!.isEmpty }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,7 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
@@ -37,9 +39,14 @@ class SearchVC: UIViewController {
     
     
     @objc func pushFollowerListVC() {
+        guard isUserNameEntered else {
+            presentGAVAlertOnMainThread(alertTitle: "Empty Username", message: "Please enter a Github username 😀", buttonTitle: "Ok")
+            return
+        }
+        
         let followerListVC      = FollowerListVC()
         followerListVC.username = usernameTextField.text
-        followerListVC.title      = usernameTextField.text
+        followerListVC.title    = usernameTextField.text
         
         navigationController?.pushViewController(followerListVC, animated: true)
     }
