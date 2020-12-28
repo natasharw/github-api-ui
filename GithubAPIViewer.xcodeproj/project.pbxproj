@@ -27,6 +27,7 @@
 		6EEBFCD3259A23F700DE86EA /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCD2259A23F700DE86EA /* Follower.swift */; };
 		6EEBFCDB259A24B000DE86EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCDA259A24B000DE86EA /* User.swift */; };
 		6EEBFCE0259A280700DE86EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCDF259A280700DE86EA /* NetworkManager.swift */; };
+		6EEBFCEA259A370F00DE86EA /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCE9259A370F00DE86EA /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		6EEBFCD2259A23F700DE86EA /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		6EEBFCDA259A24B000DE86EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6EEBFCDF259A280700DE86EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6EEBFCE9259A370F00DE86EA /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		6E13FB722597F03B0097F3F0 /* GithubAPIViewer */ = {
 			isa = PBXGroup;
 			children = (
+				6EEBFCE8259A36FA00DE86EA /* Utilities */,
 				6EEBFCE4259A28EA00DE86EA /* Managers */,
 				6EEBFCD1259A23E300DE86EA /* Model */,
 				6EEBFCCD259A1FCF00DE86EA /* Support */,
@@ -212,6 +215,14 @@
 				6EEBFCDF259A280700DE86EA /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		6EEBFCE8259A36FA00DE86EA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6EEBFCE9259A370F00DE86EA /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				6EEBFCC6259A1B7800DE86EA /* UIViewController+Ext.swift in Sources */,
 				6E13FB742597F03B0097F3F0 /* AppDelegate.swift in Sources */,
 				6E629B7E2599065000005F79 /* GAVButton.swift in Sources */,
+				6EEBFCEA259A370F00DE86EA /* ErrorMessage.swift in Sources */,
 				6E629B882599184400005F79 /* FollowerListVC.swift in Sources */,
 				6EEBFCD3259A23F700DE86EA /* Follower.swift in Sources */,
 				6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */,
