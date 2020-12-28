@@ -9,8 +9,13 @@ import UIKit
 
 class FollowerListVC: UIViewController {
     
+    enum Section {
+        case main
+    }
+    
     var username: String!
     var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     
 
     override func viewDidLoad() {
@@ -18,24 +23,24 @@ class FollowerListVC: UIViewController {
         configureViewController()
         configureCollectionView()
         getFollowers()
+        configureDataSource()
     }
-    
-    
+
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
-    
+
+
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
-    
+
+
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
-        
         view.addSubview(collectionView)
         
         collectionView.backgroundColor = .systemPink
@@ -56,8 +61,8 @@ class FollowerListVC: UIViewController {
         
         return flowLayout
     }
-    
-    
+
+
     func getFollowers() {
         NetworkManager.shared.getFollowers(forUsername: username, page: 1) { result in
             
@@ -69,5 +74,14 @@ class FollowerListVC: UIViewController {
                 self.presentGAVAlertOnMainThread(alertTitle: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+    }
+
+
+    func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
     }
 }
