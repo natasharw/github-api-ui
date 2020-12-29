@@ -4,7 +4,7 @@ An iOS app written in Swift to display records from Github's API.
 
 Created during Sean Allen's iOS Dev Job Take Home Project course. <br /> 
 
-##### Overview 
+##### Overview:
 Lookup a Github user to see their followers, with functionality to search the follower results and favourite users
 
 
