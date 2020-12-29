@@ -20,4 +20,8 @@ class GAVFollowerItemVC: GAVItemInfoVC {
         itemInfoViewTwo.set(itemInfoType: .following, with: user.following)
         actionButton.set(backgroundColor: .systemPurple, title: "Get Followers")
     }
+    
+    override func actionButtonTapped() {
+        delegate.didTapGetFollowers()
+    }
 }
