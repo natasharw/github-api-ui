@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: class {
+    func didTapGithubProfile()
+    func didTapGetFollowers()
+}
+
+
 class UserInfoVC: UIViewController {
 
     let headerView          = UIView()
@@ -92,4 +98,18 @@ class UserInfoVC: UIViewController {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
+}
+
+
+extension UserInfoVC: UserInfoVCDelegate {
+    func didTapGithubProfile() {
+        //show safari view controller
+    }
+    
+    func didTapGetFollowers() {
+        // dismissVC
+        // tell followerListVC the new user
+    }
+    
+    
 }
