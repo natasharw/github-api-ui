@@ -60,7 +60,7 @@ class GAVEmptyStateView: UIView {
         messageLabel.numberOfLines  = 3
         messageLabel.textColor      = .secondaryLabel
         
-        let labelCenterYConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? -80 : 150
+        let labelCenterYConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? -80 : -150
         
         let messageLabelCenterYConstraint = messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: labelCenterYConstant)
         messageLabelCenterYConstraint.isActive = true
