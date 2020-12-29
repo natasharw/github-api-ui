@@ -13,7 +13,7 @@ protocol FollowerListVCDelegate: class {
 }
 
 
-class FollowerListVC: UIViewController {
+class FollowerListVC: GAVDataLoadingVC {
     
     enum Section { case main }
 
