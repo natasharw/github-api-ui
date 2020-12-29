@@ -13,5 +13,6 @@ enum GAVError: String, Error {
     case invalidResponse    = "Invalid response from the server. Please try again"
     case invalidData        = "The data received from the server was invalid. Please try again"
     case invalidUserURL     = "The URL for this user is invalid"
+    case userHasNoFollowers = "This user has no followers"
 }
 

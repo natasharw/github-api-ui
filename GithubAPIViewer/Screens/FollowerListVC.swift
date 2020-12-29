@@ -145,6 +145,7 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
 
         let destVC          = UserInfoVC()
         destVC.username     = follower.login
+        destVC.delegate     = self
         let navController   = UINavigationController(rootViewController: destVC)
         present(navController, animated: true)
     }
@@ -159,6 +160,16 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
 
 extension FollowerListVC: FollowerListVCDelegate {
     func didRequestFollowers(for username: String) {
-        //call get followers for user
+        // reset the screen
+        self.username   = username
+        title           = username
+        page            =   1
+        followers.removeAll()
+        filteredFollowers.removeAll()
+        collectionView.setContentOffset(.zero, animated: true)
+
+        print(" I am here")
+
+        getFollowers(username: username, page: page)
     }
 }
