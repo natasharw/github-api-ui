@@ -32,6 +32,7 @@
 		6EA47484259BA12300766D6F /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47483259BA12300766D6F /* String+Ext.swift */; };
 		6EA4748F259BB40E00766D6F /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4748E259BB40E00766D6F /* PersistenceManager.swift */; };
 		6EA47494259BC61C00766D6F /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47493259BC61C00766D6F /* FavouriteCell.swift */; };
+		6EA474A1259BD7FA00766D6F /* GAVTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA474A0259BD7FA00766D6F /* GAVTabBarController.swift */; };
 		6EEBFCAF259A0CE900DE86EA /* GAVTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */; };
 		6EEBFCB4259A0EC200DE86EA /* GAVBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */; };
 		6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */; };
@@ -96,6 +97,7 @@
 		6EA47483259BA12300766D6F /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		6EA4748E259BB40E00766D6F /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		6EA47493259BC61C00766D6F /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCell.swift; sourceTree = "<group>"; };
+		6EA474A0259BD7FA00766D6F /* GAVTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTabBarController.swift; sourceTree = "<group>"; };
 		6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTitleLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVBodyLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAlertVC.swift; sourceTree = "<group>"; };
@@ -201,6 +203,14 @@
 			path = ItemInfoVCs;
 			sourceTree = "<group>";
 		};
+		6EA4749F259BD7E300766D6F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				6EA474A0259BD7FA00766D6F /* GAVTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		6EEBFCCA259A1F0900DE86EA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +225,7 @@
 		6EEBFCCB259A1F3F00DE86EA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				6EA4749F259BD7E300766D6F /* TabBarController */,
 				6EFA223B259A88EA00E96685 /* Labels */,
 				6EFA223A259A88E400E96685 /* ViewControllers */,
 				6EFA2239259A88DE00E96685 /* ImageViews */,
@@ -470,6 +481,7 @@
 			files = (
 				6EA47494259BC61C00766D6F /* FavouriteCell.swift in Sources */,
 				6EA47471259B99E100766D6F /* GAVRepoItemVC.swift in Sources */,
+				6EA474A1259BD7FA00766D6F /* GAVTabBarController.swift in Sources */,
 				6EEBFCDB259A24B000DE86EA /* User.swift in Sources */,
 				6E629B83259909BE00005F79 /* GAVTextField.swift in Sources */,
 				6EA47484259BA12300766D6F /* String+Ext.swift in Sources */,
