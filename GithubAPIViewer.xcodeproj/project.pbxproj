@@ -25,6 +25,7 @@
 		6EA4745A259B802A00766D6F /* GAVUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47459259B802A00766D6F /* GAVUserInfoHeaderVC.swift */; };
 		6EA47462259B889600766D6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47461259B889600766D6F /* Constants.swift */; };
 		6EA47467259B8FF200766D6F /* GAVItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47466259B8FF200766D6F /* GAVItemInfoView.swift */; };
+		6EA4746C259B96E400766D6F /* GAVItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */; };
 		6EEBFCAF259A0CE900DE86EA /* GAVTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */; };
 		6EEBFCB4259A0EC200DE86EA /* GAVBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */; };
 		6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */; };
@@ -82,6 +83,7 @@
 		6EA47459259B802A00766D6F /* GAVUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		6EA47461259B889600766D6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6EA47466259B8FF200766D6F /* GAVItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVItemInfoView.swift; sourceTree = "<group>"; };
+		6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVItemInfoVC.swift; sourceTree = "<group>"; };
 		6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTitleLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVBodyLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAlertVC.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
 				6EA47459259B802A00766D6F /* GAVUserInfoHeaderVC.swift */,
+				6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */,
 				6EEBFCE0259A280700DE86EA /* NetworkManager.swift in Sources */,
 				6EA4745A259B802A00766D6F /* GAVUserInfoHeaderVC.swift in Sources */,
+				6EA4746C259B96E400766D6F /* GAVItemInfoVC.swift in Sources */,
 				6E13FBB52598B7A60097F3F0 /* FavouriteListVC.swift in Sources */,
 				6EEBFCAF259A0CE900DE86EA /* GAVTitleLabel.swift in Sources */,
 				6EEBFCF8259A3D0D00DE86EA /* GAVAvatarImageView.swift in Sources */,
