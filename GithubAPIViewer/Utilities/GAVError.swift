@@ -1,8 +1,8 @@
 //
-//  GFError.swift
+//  GAVError.swift
 //  GithubAPIViewer
 //
-//  Created by Natasha Wilson on 28/12/2020.
+//  Created by Natasha Wilson on 29/12/2020.
 //
 
 import Foundation
