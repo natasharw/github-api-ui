@@ -26,6 +26,8 @@
 		6EA47462259B889600766D6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47461259B889600766D6F /* Constants.swift */; };
 		6EA47467259B8FF200766D6F /* GAVItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47466259B8FF200766D6F /* GAVItemInfoView.swift */; };
 		6EA4746C259B96E400766D6F /* GAVItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */; };
+		6EA47471259B99E100766D6F /* GAVRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47470259B99E100766D6F /* GAVRepoItemVC.swift */; };
+		6EA47476259B9B9900766D6F /* GAVFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA47475259B9B9900766D6F /* GAVFollowerItemVC.swift */; };
 		6EEBFCAF259A0CE900DE86EA /* GAVTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */; };
 		6EEBFCB4259A0EC200DE86EA /* GAVBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */; };
 		6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */; };
@@ -84,6 +86,8 @@
 		6EA47461259B889600766D6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6EA47466259B8FF200766D6F /* GAVItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVItemInfoView.swift; sourceTree = "<group>"; };
 		6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVItemInfoVC.swift; sourceTree = "<group>"; };
+		6EA47470259B99E100766D6F /* GAVRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVRepoItemVC.swift; sourceTree = "<group>"; };
+		6EA47475259B9B9900766D6F /* GAVFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVFollowerItemVC.swift; sourceTree = "<group>"; };
 		6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTitleLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVBodyLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAlertVC.swift; sourceTree = "<group>"; };
@@ -177,6 +181,16 @@
 				6E13FB972597F03C0097F3F0 /* Info.plist */,
 			);
 			path = GithubAPIViewerUITests;
+			sourceTree = "<group>";
+		};
+		6EA4747A259B9BE500766D6F /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */,
+				6EA47470259B99E100766D6F /* GAVRepoItemVC.swift */,
+				6EA47475259B9B9900766D6F /* GAVFollowerItemVC.swift */,
+			);
+			path = ItemInfoVCs;
 			sourceTree = "<group>";
 		};
 		6EEBFCCA259A1F0900DE86EA /* Screens */ = {
@@ -294,9 +308,9 @@
 		6EFA223A259A88E400E96685 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6EA4747A259B9BE500766D6F /* ItemInfoVCs */,
 				6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */,
 				6EA47459259B802A00766D6F /* GAVUserInfoHeaderVC.swift */,
-				6EA4746B259B96E400766D6F /* GAVItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -442,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA47471259B99E100766D6F /* GAVRepoItemVC.swift in Sources */,
 				6EEBFCDB259A24B000DE86EA /* User.swift in Sources */,
 				6E629B83259909BE00005F79 /* GAVTextField.swift in Sources */,
 				6EA47448259B7ED100766D6F /* GAVError.swift in Sources */,
@@ -451,6 +466,7 @@
 				6EEBFCC6259A1B7800DE86EA /* UIViewController+Ext.swift in Sources */,
 				6EA47462259B889600766D6F /* Constants.swift in Sources */,
 				6EFA222F259A4F8800E96685 /* UIHelper.swift in Sources */,
+				6EA47476259B9B9900766D6F /* GAVFollowerItemVC.swift in Sources */,
 				6E13FB742597F03B0097F3F0 /* AppDelegate.swift in Sources */,
 				6E629B7E2599065000005F79 /* GAVButton.swift in Sources */,
 				6EEBFCF0259A3C9100DE86EA /* FollowerCell.swift in Sources */,

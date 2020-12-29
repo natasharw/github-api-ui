@@ -40,6 +40,8 @@ class UserInfoVC: UIViewController {
             case .success(let user):
                 DispatchQueue.main.async {
                     self.add(childVC: GAVUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GAVRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: GAVFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
             case .failure(let error):
                 self.presentGAVAlertOnMainThread(alertTitle: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
@@ -60,9 +62,6 @@ class UserInfoVC: UIViewController {
                         itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding)])
         }
-
-        itemViewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemTeal
 
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
