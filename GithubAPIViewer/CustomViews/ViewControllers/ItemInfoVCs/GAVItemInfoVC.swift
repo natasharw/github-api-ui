@@ -15,6 +15,7 @@ class GAVItemInfoVC: UIViewController {
     let actionButton    = GAVButton()
     
     var user: User!
+    var delegate: UserInfoVCDelegate!
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
@@ -48,8 +49,8 @@ class GAVItemInfoVC: UIViewController {
         stackView.addArrangedSubview(itemInfoViewOne)
         stackView.addArrangedSubview(itemInfoViewTwo)
     }
-
-
+    
+    
     private func layoutUI() {
         view.addSubview(stackView)
         view.addSubview(actionButton)
