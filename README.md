@@ -15,6 +15,7 @@ Lookup a Github user to see their followers, with functionality to search the fo
 * Dark mode support
 * Uses Dynamic Type to increase accessibility
 * Uses NSCache for image caching to improve app performance
+* Use of Safari View Controller
 * All native code - no third party libraries used
 
 <br /> 

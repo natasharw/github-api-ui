@@ -23,6 +23,6 @@ class GAVRepoItemVC: GAVItemInfoVC {
     
     
     override func actionButtonTapped() {
-        delegate.didTapGithubProfile()
+        delegate.didTapGithubProfile(for: user)
     }
 }
