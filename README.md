@@ -3,9 +3,11 @@
 An iOS app written in Swift to display records from Github's API. 
 
 Created during Sean Allen's iOS Dev Job Take Home Project course.
+Search for a Github user to see their followers, with functionality to search follower results and favourite users.
+
 
 ##### Notable features include:
-* Built using Programmtic UI (rather than Storyboards)
+* Built using Programmatic UI (rather than Storyboards)
 * Uses iOS 13 diffable data source for filtering of collection view
 * Uses Swift 5 "Result" type for network call result handling
 * Dark mode support
