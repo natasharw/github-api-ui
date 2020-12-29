@@ -1,13 +1,13 @@
 //
-//  GAVBodyLabel.swift
+//  GAVSecondaryTitleLabel.swift
 //  GithubAPIViewer
 //
-//  Created by Natasha Wilson on 28/12/2020.
+//  Created by Natasha Wilson on 29/12/2020.
 //
 
 import UIKit
 
-class GAVBodyLabel: UILabel {
+class GAVSecondaryTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,19 +20,18 @@ class GAVBodyLabel: UILabel {
     }
 
 
-    init(textAlignment: NSTextAlignment) {
+    init(fontSize: CGFloat) {
         super.init(frame: .zero)
-        self.textAlignment  = textAlignment
+        font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
         configure()
     }
 
 
     private func configure() {
         textColor                                   = .secondaryLabel
-        font                                        = UIFont.preferredFont(forTextStyle: .body)
         adjustsFontSizeToFitWidth                   = true
-        minimumScaleFactor                          = 0.75
-        lineBreakMode                               = .byWordWrapping
+        minimumScaleFactor                          = 0.90
+        lineBreakMode                               = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints   = false
     }
 }
