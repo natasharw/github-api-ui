@@ -35,6 +35,7 @@
 		6EA474A1259BD7FA00766D6F /* GAVTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA474A0259BD7FA00766D6F /* GAVTabBarController.swift */; };
 		6EA474A9259BE3D400766D6F /* GAVAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA474A8259BE3D400766D6F /* GAVAlertContainerView.swift */; };
 		6EA474AE259BEC7A00766D6F /* GAVDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA474AD259BEC7A00766D6F /* GAVDataLoadingVC.swift */; };
+		6EA474B3259BF56600766D6F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA474B2259BF56600766D6F /* UIView+Ext.swift */; };
 		6EEBFCAF259A0CE900DE86EA /* GAVTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */; };
 		6EEBFCB4259A0EC200DE86EA /* GAVBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */; };
 		6EEBFCB9259A0FBB00DE86EA /* GAVAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */; };
@@ -102,6 +103,7 @@
 		6EA474A0259BD7FA00766D6F /* GAVTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTabBarController.swift; sourceTree = "<group>"; };
 		6EA474A8259BE3D400766D6F /* GAVAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAlertContainerView.swift; sourceTree = "<group>"; };
 		6EA474AD259BEC7A00766D6F /* GAVDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVDataLoadingVC.swift; sourceTree = "<group>"; };
+		6EA474B2259BF56600766D6F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		6EEBFCAE259A0CE900DE86EA /* GAVTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVTitleLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB3259A0EC200DE86EA /* GAVBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVBodyLabel.swift; sourceTree = "<group>"; };
 		6EEBFCB8259A0FBB00DE86EA /* GAVAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVAlertVC.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				6EEBFCC5259A1B7800DE86EA /* UIViewController+Ext.swift */,
 				6EA4747E259BA10C00766D6F /* Date+Ext.swift */,
 				6EA47483259BA12300766D6F /* String+Ext.swift */,
+				6EA474B2259BF56600766D6F /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				6EEBFCF8259A3D0D00DE86EA /* GAVAvatarImageView.swift in Sources */,
 				6E13FB762597F03B0097F3F0 /* SceneDelegate.swift in Sources */,
 				6EFA224B259A97FF00E96685 /* UserInfoVC.swift in Sources */,
+				6EA474B3259BF56600766D6F /* UIView+Ext.swift in Sources */,
 				6EA474A9259BE3D400766D6F /* GAVAlertContainerView.swift in Sources */,
 				6EA47450259B7F0700766D6F /* GAVSecondaryTitleLabel.swift in Sources */,
 			);

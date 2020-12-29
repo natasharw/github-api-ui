@@ -31,14 +31,13 @@ class GAVEmptyStateView: UIView {
     
     
     private func configure() {
+        addSubviews(logoImageView, messageLabel)
         configureLogoImageView()
         configureMessageLabel()
     }
 
 
     private func configureLogoImageView() {
-        addSubview(logoImageView)
-
         logoImageView.image         = Images.emptyStateLogo
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -54,9 +53,7 @@ class GAVEmptyStateView: UIView {
         ])
     }
     
-    private func configureMessageLabel() {
-        addSubview(messageLabel)
-        
+    private func configureMessageLabel() {        
         messageLabel.numberOfLines  = 3
         messageLabel.textColor      = .secondaryLabel
         
