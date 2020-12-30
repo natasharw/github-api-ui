@@ -8,15 +8,16 @@
 import UIKit
 
 class GAVDataLoadingVC: UIViewController {
-    
+
     var containerView: UIView!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
-    
+
+
     func showLoadingView() {
         containerView = UIView(frame: view.bounds)
         view.addSubview(containerView)
@@ -39,7 +40,7 @@ class GAVDataLoadingVC: UIViewController {
 
         activityIndicator.startAnimating()
     }
-    
+
 
     func dismissLoadingView() {
         DispatchQueue.main.async {

@@ -8,7 +8,7 @@
 import UIKit
 
 class FollowerListVC: GAVDataLoadingVC {
-    
+
     enum Section { case main }
 
     var username: String!
@@ -21,19 +21,19 @@ class FollowerListVC: GAVDataLoadingVC {
 
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
-    
-    
+
+
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
         self.username   = username
         title           = username
     }
-    
-    
+
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,31 +81,37 @@ class FollowerListVC: GAVDataLoadingVC {
     func getFollowers(username: String, page: Int) {
         showLoadingView()
         self.isLoadingMoreFollowers = true
-        
+
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
 
             switch result {
             case .success(let followers):
-                if followers.count < 100 { self.hasMoreFollowers = false }
-                self.followers.append(contentsOf: followers)
-
-                if self.followers.isEmpty {
-                    let message = "This Github user doesn't have any followers yet"
-                    DispatchQueue.main.async {
-                        self.showEmptyStateView(with: message, in: self.view)
-                        return
-                    }
-                }
-                self.updateData(on: self.followers)
+                self.updateUI(with: followers)
 
             case .failure(let error):
                 self.presentGAVAlertOnMainThread(alertTitle: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
             }
-            
+
             self.isLoadingMoreFollowers = false
         }
+    }
+
+
+    func updateUI(with followers: [Follower]) {
+        if followers.count < 100 { self.hasMoreFollowers = false }
+        self.followers.append(contentsOf: followers)
+
+        if self.followers.isEmpty {
+            let message = "This Github user doesn't have any followers yet"
+            DispatchQueue.main.async {
+                self.showEmptyStateView(with: message, in: self.view)
+                return
+            }
+        }
+
+        self.updateData(on: self.followers)
     }
 
 
@@ -124,33 +130,38 @@ class FollowerListVC: GAVDataLoadingVC {
         snapshot.appendItems(followers)
         DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true) }
     }
-    
-    
+
+
     @objc func addButtonTapped() {
         showLoadingView()
-        
+
         NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
-            
+
             switch result {
             case .success(let user):
-                let favourite = Follower(login: user.login, avatarUrl: user.avatarUrl)
-                
-                PersistenceManager.updateWith(favourite: favourite, actionType: .add) { [weak self] error in
-                    guard let self = self else { return }
-                    
-                    guard let error = error else {
-                        self.presentGAVAlertOnMainThread(alertTitle: "Success", message: "\(user.login) has been added to your favourites", buttonTitle: "Ok")
-                        return
-                    }
-                    
-                    self.presentGAVAlertOnMainThread(alertTitle: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
-                }
-                
+                self.addUserToFavourites(user: user)
+
             case .failure(let error):
                 self.presentGAVAlertOnMainThread(alertTitle: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
+        }
+    }
+
+
+    func addUserToFavourites(user: User) {
+        let favourite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+        
+        PersistenceManager.updateWith(favourite: favourite, actionType: .add) { [weak self] error in
+            guard let self = self else { return }
+            
+            guard let error = error else {
+                self.presentGAVAlertOnMainThread(alertTitle: "Success", message: "\(user.login) has been added to your favourites", buttonTitle: "Ok")
+                return
+            }
+
+            self.presentGAVAlertOnMainThread(alertTitle: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
         }
     }
 }
@@ -207,7 +218,7 @@ extension FollowerListVC: UserInfoVCDelegate {
         followers.removeAll()
         filteredFollowers.removeAll()
         collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
-        
+
         getFollowers(username: username, page: page)
     }
 }

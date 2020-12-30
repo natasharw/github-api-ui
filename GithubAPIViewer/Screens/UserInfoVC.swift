@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol UserInfoVCDelegate: class {
     func didRequestFollowers(for username: String)
 }
@@ -42,8 +41,8 @@ class UserInfoVC: GAVDataLoadingVC {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
     }
-    
-    
+
+
     func configureScrollView() {
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -69,8 +68,8 @@ class UserInfoVC: GAVDataLoadingVC {
             }
         }
     }
-    
-    
+
+
     func configureUIElements(with user: User) {
         self.add(childVC: GAVUserInfoHeaderVC(user: user), to: self.headerView)
         self.add(childVC: GAVRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
@@ -125,20 +124,22 @@ class UserInfoVC: GAVDataLoadingVC {
 
 
 extension UserInfoVC: GAVRepoInfoVCDelegate, GAVFollowerItemVCDelegate {
+
     func didTapGithubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGAVAlertOnMainThread(alertTitle: "Invalid URL", message: GAVError.invalidUserURL.rawValue, buttonTitle: "Ok")
             return
         }
-        
+
         presentSafariVC(with: url)
     }
-    
+
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGAVAlertOnMainThread(alertTitle: "No followers", message: GAVError.userHasNoFollowers.rawValue, buttonTitle: "Ok")
             return
         }
+
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }

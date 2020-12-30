@@ -7,20 +7,17 @@
 
 import Foundation
 
-
 enum PesistenceActionType {
     case add, remove
 }
 
 enum PersistenceManager {
-    
+
     static private let defaults = UserDefaults.standard
-    
-    enum Keys {
-        static let favourites = "favourites"
-    }
-    
-    
+
+    enum Keys { static let favourites = "favourites" }
+
+
     static func updateWith(favourite: Follower, actionType: PesistenceActionType, completed: @escaping (GAVError?) -> Void) {
         retrieveFavourites { result in
             switch result {
@@ -31,28 +28,27 @@ enum PersistenceManager {
                         completed(.alreadyInFavourites)
                         return
                     }
-                    
+
                     favourites.append(favourite)
                 case .remove:
                     favourites.removeAll { $0.login == favourite.login }
                 }
-                
+
                 completed(save(favourites: favourites))
-                
+
             case .failure(let error):
                 completed(error)
             }
         }
-        
     }
-    
-    
+
+
     static func retrieveFavourites(completed: @escaping (Result<[Follower], GAVError>) -> Void) {
         guard let favouritesData = defaults.object(forKey: Keys.favourites) as? Data else {
             completed(.success([]))
             return
         }
-        
+
         do {
             let decoder = JSONDecoder()
             let favourites = try decoder.decode([Follower].self, from: favouritesData)
@@ -61,10 +57,9 @@ enum PersistenceManager {
             completed(.failure(.unableToFavourite))
         }
     }
-    
-    
+
+
     static func save(favourites: [Follower]) -> GAVError? {
-        
         do {
             let encoder = JSONEncoder()
             let encodedFavourites = try encoder.encode(favourites)

@@ -12,34 +12,34 @@ protocol GAVRepoInfoVCDelegate: class {
 }
 
 class GAVRepoItemVC: GAVItemInfoVC {
-    
+
     weak var delegate: GAVRepoInfoVCDelegate!
-    
-    
+
+
     init(user: User, delegate: GAVRepoInfoVCDelegate) {
         super.init(user: user)
         self.delegate = delegate
     }
-    
-    
+
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-        
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureItems()
     }
-    
-    
+
+
     private func configureItems() {
         itemInfoViewOne.set(itemInfoType: .repos, with: user.publicRepos)
         itemInfoViewTwo.set(itemInfoType: .gists, with: user.publicGists)
         actionButton.set(backgroundColor: .systemPurple, title: "Github Profile")
     }
-    
-    
+
+
     override func actionButtonTapped() {
         delegate.didTapGithubProfile(for: user)
     }
