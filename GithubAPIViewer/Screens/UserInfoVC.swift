@@ -55,16 +55,10 @@ class UserInfoVC: GAVDataLoadingVC {
     
     
     func configureUIElements(with user: User) {
-        
-        let repoItemVC          = GAVRepoItemVC(user: user)
-        repoItemVC.delegate     = self
-        
-        let followerItemVC      = GAVFollowerItemVC(user: user)
-        followerItemVC.delegate = self
-        
+            
         self.add(childVC: GAVUserInfoHeaderVC(user: user), to: self.headerView)
-        self.add(childVC: repoItemVC, to: self.itemViewOne)
-        self.add(childVC: followerItemVC, to: self.itemViewTwo)
+        self.add(childVC: GAVRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
+        self.add(childVC: GAVFollowerItemVC(user: user, delegate: self), to: self.itemViewTwo)
         self.dateLabel.text = "GitHub user since \(user.createdAt.convertToMonthYearFormat())"
     }
 

@@ -14,6 +14,17 @@ protocol GAVFollowerItemVCDelegate: class {
 class GAVFollowerItemVC: GAVItemInfoVC {
     
     weak var delegate: GAVFollowerItemVCDelegate!
+    
+    
+    init(user: User, delegate: GAVFollowerItemVCDelegate) {
+        super.init(user: user)
+        self.delegate = delegate
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
