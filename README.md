@@ -2,7 +2,7 @@
 
 An iOS app written in Swift to display records from Github's API. 
 
-Created during Sean Allen's iOS Dev Job Take Home Project course. <br /> 
+Created during Sean Allen's <i> incredible </i> iOS Dev Job Take Home Project course. <br /> 
 
 ##### Overview:
 Lookup a Github user to see their followers, search the results set, look at detailed user information about a follower, view their Github profile using an in-app browser, and add or remove follower searches from a list of favourites
@@ -21,19 +21,47 @@ Lookup a Github user to see their followers, search the results set, look at det
 
 <br /> 
 
-##### Light mode:
+##### Followers Search - Light mode:
 
-<a href="screenshot-white-one"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_white_1.png" width="150"/></a>
-<a href="screenshot-white-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_white_2.png" width="150"/></a>
-<a href="screenshot-white-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_white_3.png" width="150"/></a>
-<a href="screenshot-white-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_white_4.png" width="150"/></a>
+<a href="screenshot-white-one"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_1.png" width="150"/></a>
+<a href="screenshot-white-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_2.png" width="150"/></a>
+<a href="screenshot-white-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_3.png" width="150"/></a>
+<a href="screenshot-white-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_4.png" width="150"/></a>
 
 <br /> 
 
+##### Followers Search - Dark mode:
 
-##### Dark mode:
+<a href="screenshot-white-one"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_1.png" width="150"/></a>
+<a href="screenshot-white-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_2.png" width="150"/></a>
+<a href="screenshot-white-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_3.png" width="150"/></a>
+<a href="screenshot-white-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_4.png" width="150"/></a>
 
-<a href="screenshot-black-one"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_black_1.png" width="150"/></a>
-<a href="screenshot-black-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_black_2.png" width="150"/></a>
-<a href="screenshot-black-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_black_3.png" width="150"/></a>
-<a href="screenshot-black-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot_2_black_4.png" width="150"/></a>
+<br /> 
+
+##### Favourites Screen - Light mode:
+
+<a href="screenshot-white-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_7.png" width="150"/></a>
+<a href="screenshot-white-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_8.png" width="150"/></a>
+
+<br /> 
+
+##### Favourites Screen - Dark mode:
+
+<a href="screenshot-white-three"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_7.png" width="150"/></a>
+<a href="screenshot-white-four"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_8.png" width="150"/></a>
+
+<br /> 
+
+##### Detailed User Screen - Light mode:
+
+<a href="screenshot-white-one"><img
+ src="GithubAPIViewer/Support/READMEImages/screenshot3_white_5.png" width="150"/></a>
+<a href="screenshot-white-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_white_6.png" width="150"/></a>
+
+<br /> 
+
+##### Detailed User Screen - Dark mode:
+
+<a href="screenshot-white-one"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_5.png" width="150"/></a>
+<a href="screenshot-white-two"><img src="GithubAPIViewer/Support/READMEImages/screenshot3_black_6.png" width="150"/></a>
