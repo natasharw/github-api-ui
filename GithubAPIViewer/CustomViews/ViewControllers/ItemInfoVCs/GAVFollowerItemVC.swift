@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol GAVFollowerItemVCDelegate: class {
+    func didTapGetFollowers(for user: User)
+}
+
 class GAVFollowerItemVC: GAVItemInfoVC {
+    
+    weak var delegate: GAVFollowerItemVCDelegate!
         
     override func viewDidLoad() {
         super.viewDidLoad()

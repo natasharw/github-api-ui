@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol GAVRepoInfoVCDelegate: class {
+    func didTapGithubProfile(for user: User)
+}
+
 class GAVRepoItemVC: GAVItemInfoVC {
+    
+    weak var delegate: GAVRepoInfoVCDelegate!
         
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol ItemInfoVCDelegate: class {
-    func didTapGithubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
-}
-
 class GAVItemInfoVC: UIViewController {
 
     let stackView       = UIStackView()
@@ -20,7 +15,6 @@ class GAVItemInfoVC: UIViewController {
     let actionButton    = GAVButton()
     
     var user: User!
-    weak var delegate: ItemInfoVCDelegate!
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)

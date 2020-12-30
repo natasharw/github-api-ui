@@ -112,7 +112,7 @@ class UserInfoVC: GAVDataLoadingVC {
 }
 
 
-extension UserInfoVC: ItemInfoVCDelegate {
+extension UserInfoVC: GAVRepoInfoVCDelegate, GAVFollowerItemVCDelegate {
     func didTapGithubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGAVAlertOnMainThread(alertTitle: "Invalid URL", message: GAVError.invalidUserURL.rawValue, buttonTitle: "Ok")
